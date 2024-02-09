@@ -16,28 +16,28 @@ const Navigation = () => {
           portfolio
           <ul className="nav-projects">
             <NavLink
-              to="/projet-1"
+              to="/cours-collectifs"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li>projet 1</li>
+              <li>Cours Collectifs</li>
             </NavLink>
             <NavLink
-              to="/projet-2"
+              to="/cours-prives"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li>projet 2</li>
+              <li>Cours Privés</li>
             </NavLink>
             <NavLink
-              to="/projet-3"
+              to="/show-animation"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li>projet 3</li>
+              <li>Show & Animation</li>
             </NavLink>
             <NavLink
-              to="/projet-4"
+              to="/ouverture-de-bal"
               className={(nav) => (nav.isActive ? "nav-active hover" : "hover")}
             >
-              <li>projet 4</li>
+              <li>Ouverture de Bal</li>
             </NavLink>
           </ul>
         </li>

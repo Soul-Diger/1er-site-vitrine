@@ -2,21 +2,21 @@ import React from 'react';
 import Mouse from '../components/Mouse';
 import Navigation from '../components/Navigation';
 import Logo from '../components/Logo';
+import Activity from '../components/Activity';
 import Buttons from '../components/Buttons';
-import Project from '../components/Project';
 
-const Project1 = () => {
+const Activity2 = () => {
   return (
     <main>
       <Mouse />
-      <div className="project">
+      <div className="activity">
         <Navigation />
         <Logo />
-        <Project projectNumber={0} />
-        <Buttons left={"/"} right={"/projet-2"}/>
+        <Activity activityNumber={1} />
+        <Buttons left={"/projet-1"} right={"/projet-3"}/>
       </div>
-   </main>
+    </main>
   );
 };
 
-export default Project1;
+export default Activity2;

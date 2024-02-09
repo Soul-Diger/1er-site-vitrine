@@ -3,7 +3,6 @@ import React from "react";
 const SocialNetwork = () => {
   const anim = () => {
     const icons = document.querySelectorAll(".social-network a");
-   
 
     icons.forEach((link) => {
       link.addEventListener("mouseover", (e) => {
@@ -12,9 +11,9 @@ const SocialNetwork = () => {
         }px)`;
       });
 
-      link.addEventListener('mouseleave', () => {
+      link.addEventListener("mouseleave", () => {
         link.style.transform = "";
-      })
+      });
     });
   };
 
@@ -23,7 +22,7 @@ const SocialNetwork = () => {
       <div className="social-network">
         <ul className="content">
           <a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/digeretmarie/"
             target="blank"
             rel="noopener noreferrer"
             className="hover"
@@ -35,19 +34,7 @@ const SocialNetwork = () => {
           </a>
 
           <a
-            href="https://www.twitter.com"
-            target="blank"
-            rel="noopener noreferrer"
-            className="hover"
-            onMouseOver={anim}
-          >
-            <li>
-              <i className="fab fa-twitter"></i>
-            </li>
-          </a>
-
-          <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/digermarie.bachata/"
             target="blank"
             rel="noopener noreferrer"
             className="hover"
@@ -55,6 +42,18 @@ const SocialNetwork = () => {
           >
             <li>
               <i className="fab fa-instagram"></i>
+            </li>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@digeretmarie5617/videos"
+            target="blank"
+            rel="noopener noreferrer"
+            className="hover"
+            onMouseOver={anim}
+          >
+            <li>
+              <i class="fa-brands fa-youtube"></i>
             </li>
           </a>
         </ul>

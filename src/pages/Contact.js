@@ -35,24 +35,24 @@ const Contact = () => {
         <Logo />
         <ContactForm />
         <div className="contact-infos">
-          <div className="address">
+          {/* <div className="address">
             <div className="content">
               <h4>adresse</h4>
               <p>12 rue de la Bachata</p>
               <p>5620 Barcelone</p>
             </div>
-          </div>
+          </div> */}
 
           <div className="phone">
             <div className="content">
               <h4>téléphone</h4>
-              <CopyToClipboard text="0102030406" className="hover">
+              <CopyToClipboard text="0667719276" className="hover">
                 <p
                   style={{ cursor: "pointer" }}
                   className="clipboard"
                   onClick={() => alert("Téléphone copié !")}
                 >
-                  01 02 03 04 06
+                  06 67 71 92 76 
                 </p>
               </CopyToClipboard>
             </div>
@@ -61,13 +61,13 @@ const Contact = () => {
           <div className="email">
             <div className="content">
               <h4>email</h4>
-              <CopyToClipboard text="danse@bachata.com" className="hover">
+              <CopyToClipboard text="digermarie.bachata@gmail.com" className="hover">
                 <p
                   style={{ cursor: "pointer" }}
                   className="clipboard"
                   onClick={() => alert("Email copié !")}
                 >
-                  danse@bachata.com
+                  digermarie.bachata@gmail.com
                 </p>
               </CopyToClipboard>
             </div>
@@ -76,7 +76,7 @@ const Contact = () => {
           <SocialNetwork />
 
           <div className="credits">
-            <p>Patrick Diger - 2023</p>
+            <p>Patrick Diger - 2024</p>
           </div>
         </div>
         <Buttons left={"/projet-4"} />

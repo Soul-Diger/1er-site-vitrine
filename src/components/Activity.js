@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { projectsData } from "../data/projectsData";
+import { activitysData } from "../data/activitysData";
 import { motion } from "framer-motion";
 
-const Project = ({ projectNumber }) => {
-  const [currentProject] = useState(projectsData[projectNumber]);
+const Activity = ({ activityNumber }) => {
+  const [currentactivity] = useState(activitysData[activityNumber]);
   const [left, setLeft] = useState();
   const [top, setTop] = useState();
   const [size, setSize] = useState();
@@ -51,19 +51,19 @@ const Project = ({ projectNumber }) => {
 
   return (
     <motion.div
-      className="project-main"
+      className="activity-main"
       initial="initial"
       animate="visible"
       exit="exit"
       transition={transition}
       variants={variants}
     >
-      <div className="project-content">
-        <h1>{currentProject.title}</h1>
-        <p>{currentProject.date}</p>
+      <div className="activity-content">
+        <h1>{currentactivity.title}</h1>
+        <p>{currentactivity.date}</p>
 
         <ul className="languages">
-          {currentProject.languages.map((item) => (
+          {currentactivity.languages.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
@@ -77,19 +77,19 @@ const Project = ({ projectNumber }) => {
       >
         <div className="img-container hover">
           <span>
-            <h3>{currentProject.title}</h3>
-            <p>{currentProject.infos}</p>
+            <h3>{currentactivity.title}</h3>
+            <p>{currentactivity.infos}</p>
           </span>
           {/* dans la base de donnée, l'img a son chemin d'entré, donc ici, pas besoin de tout retaper */}
           <img
-            src={currentProject.img}
-            alt={currentProject.title}
+            src={currentactivity.img}
+            alt={currentactivity.title}
             className="img"
           />
         </div>
         <div className="button-container">
           <a
-            href={currentProject.link}
+            href={currentactivity.link}
             target="_blank"
             rel="noopener noreferrer"
             className="hover"
@@ -106,4 +106,4 @@ const Project = ({ projectNumber }) => {
   );
 };
 
-export default Project;
+export default Activity;

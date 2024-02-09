@@ -47,7 +47,7 @@ const Home = () => {
                 bottom: 250,
               }}
             >
-              FS AGENCY
+              Diger & Marie
             </motion.h1>
             <h2>
               <DynamicText />
